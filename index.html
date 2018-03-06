@@ -2,7 +2,14 @@
   <head><title>我的主页</title>
   </head>
 <script>
-  
+  function myfunction()
+  {
+    var x=document.getElementsById("demo").values
+    if (x==''||isNaN(x))
+    {
+      alert("用户名请输入数字");
+    }
+  }
   </script>
 <body>
   <hr/>
@@ -10,9 +17,9 @@
   <fieldset>
     <legend align='center'>英雄联盟</legend>
     <form>
-      用户名：<input type='text'name="user"><br/>
+      用户名：<input type='text'name="user" id="demo"><br/>
       密码：<input type="password" name="pwd">
-      <input type='submit' value="登陆">
+      <input type='submit' onclick="myfunction()" value="登陆">
       </from>
   </fieldset>
   <a href="https://www.baidu.com">百 度</a>
