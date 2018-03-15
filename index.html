@@ -19,6 +19,14 @@
       {
         alert('你干嘛要点这个按钮！')
       }
+  function cue()
+      {
+        var x=prompt('你好，请告诉我你的名字：','yourname')
+        if (x!=null&&x!='')
+        {
+          document.write('你的名字叫'+x);
+        }
+      }
   </script>
   </head>
 <!--<body onload='welcome()'>-->
@@ -51,5 +59,6 @@
       document.write(d)
     </script>
     <button type='button' onclick='test()'>测试</button>
+    <button type='button' onclick='cue()'>提示</button>
 </body>
 </html>
